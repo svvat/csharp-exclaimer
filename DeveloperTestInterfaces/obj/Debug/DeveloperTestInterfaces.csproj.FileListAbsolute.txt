@@ -1,0 +1,6 @@
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestInterfaces\bin\Debug\DeveloperTestInterfaces.dll
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestInterfaces\bin\Debug\DeveloperTestInterfaces.pdb
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestInterfaces\obj\Debug\DeveloperTestInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestInterfaces\obj\Debug\DeveloperTestInterfaces.dll
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestInterfaces\obj\Debug\DeveloperTestInterfaces.pdb
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestInterfaces\obj\Debug\DeveloperTestInterfaces.csprojAssemblyReference.cache

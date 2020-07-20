@@ -1,0 +1,9 @@
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\bin\Debug\DeveloperTestSupport.dll
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\bin\Debug\DeveloperTestSupport.pdb
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\bin\Debug\DeveloperTestInterfaces.dll
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\bin\Debug\DeveloperTestInterfaces.pdb
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.csprojAssemblyReference.cache
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.csproj.CoreCompileInputs.cache
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.csproj.CopyComplete
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.dll
+C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.pdb
