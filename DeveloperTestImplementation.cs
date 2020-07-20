@@ -33,13 +33,14 @@ namespace DeveloperTest
         public void RunQuestionOne(ICharacterReader reader, IOutputResult output)
         {
             Dictionary<string, int> wordTotals = new Dictionary<string, int>();
-            AddSortedDictionary(TextBuider.GetWords(reader), ref wordTotals);
+            var t = new TextBuider();
+            AddSortedDictionary(t.GetWords(reader), ref wordTotals);
 
             loadResults(output, wordTotals);
 
         }
 
-        private static void loadResults(IOutputResult output, Dictionary<string, int> wordTotals)
+        private void loadResults(IOutputResult output, Dictionary<string, int> wordTotals)
         {
 
             foreach (var wordTotal in wordTotals.OrderBy(i => i.Key).OrderByDescending(i => i.Value))
@@ -67,16 +68,25 @@ namespace DeveloperTest
 
         public void loadWordCount(Object o)
         {
-            readData q2Data = (readData)o;
-            ICharacterReader reader = q2Data.reader;
-            AddSortedDictionary(TextBuider.GetWords(q2Data.reader), ref q2Data.wordTotals);
+            try
+            {
+                var t = new TextBuider();
+                readData q2Data = (readData)o;
+                ICharacterReader reader = q2Data.reader;
+                AddSortedDictionary(t.GetWords(q2Data.reader), ref q2Data.wordTotals);
 
-            _completeCount++;
+                _completeCount++;
+    
+            }
+            catch(Exception e)
+            {
+                _failCount++;
+                Console.WriteLine("\nMessage ---\n{0}", e.Message);
+            }
         }
 
 
-        private bool _waitingForThreads;
-        private int _completeCount;
+        private int _completeCount = 0, _failCount = 0;
         /// <summary>
         /// This method takes an array of ICharacterReader interfaces and should perform the following operations: -
         ///   a) Access the readers in parallel and calculate the word counts split by word
@@ -87,16 +97,20 @@ namespace DeveloperTest
         /// <param name="output"></param>
         public void RunQuestionTwo(ICharacterReader[] readers, IOutputResult output)
         {
-            const int DELAYMS = 10000;
+            Debug.WriteLine("RunQuestionTwo...");
+
+            const int DELAYMS = 100;
             int readerCount = readers.Length;
             Dictionary<string, int> wordTotals = new Dictionary<string, int>();
             List<Dictionary<string, int>> readerOutputs = new List<Dictionary<string, int>>();
             List<Thread> activeThreads = new List<Thread>(readerCount);
+            Debug.WriteLine("RunQuestionTwo...1");
             foreach (ICharacterReader reader in readers)
             {
                 // fire up each reader asynchronously
                 // var sortedList = GetSortedDictionary(reader);
 
+                
                 readData q2Data = new readData { reader = reader, wordTotals = wordTotals };
 
                 Thread t = new Thread(new ParameterizedThreadStart(loadWordCount));
@@ -105,11 +119,13 @@ namespace DeveloperTest
 
             }
 
+            Debug.WriteLine("RunQuestionTwo...2");
 
-            while (_completeCount < readerCount)
+            while (_completeCount + _failCount < readerCount)
             {
                 Thread.Sleep(DELAYMS);
                 loadResults(output, wordTotals);
+                Debug.WriteLine(string.Format("\nFails:{0}, success {1}", _failCount, _completeCount));
             }
 
             loadResults(output, wordTotals);

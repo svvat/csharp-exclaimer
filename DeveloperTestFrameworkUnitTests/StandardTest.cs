@@ -44,7 +44,7 @@ namespace DeveloperTestFramework
             }
         }
 
-        [Test, Timeout(120000)]
+        [Test]
         public void TestQuestionTwoSingle()
         {
             var output = new Question2TestOutput();

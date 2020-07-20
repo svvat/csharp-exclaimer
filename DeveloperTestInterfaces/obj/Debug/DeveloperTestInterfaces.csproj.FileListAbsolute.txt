@@ -4,3 +4,9 @@ C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestInterfac
 C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestInterfaces\obj\Debug\DeveloperTestInterfaces.dll
 C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestInterfaces\obj\Debug\DeveloperTestInterfaces.pdb
 C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestInterfaces\obj\Debug\DeveloperTestInterfaces.csprojAssemblyReference.cache
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestInterfaces\bin\Debug\DeveloperTestInterfaces.dll
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestInterfaces\bin\Debug\DeveloperTestInterfaces.pdb
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestInterfaces\obj\Debug\DeveloperTestInterfaces.csprojAssemblyReference.cache
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestInterfaces\obj\Debug\DeveloperTestInterfaces.csproj.CoreCompileInputs.cache
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestInterfaces\obj\Debug\DeveloperTestInterfaces.dll
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestInterfaces\obj\Debug\DeveloperTestInterfaces.pdb

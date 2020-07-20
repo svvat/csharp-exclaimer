@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Diagnostics;
+using System;
 
 namespace DeveloperTest
 {
     public class TextBuider
     {
-        public static List<char> GetChars(ICharacterReader reader)
+        public List<char> GetChars(ICharacterReader reader)
         {
             List<char> chars = new List<char>();
             try
@@ -18,6 +19,7 @@ namespace DeveloperTest
                 while (c != 0)
                 {
                     chars.Add(c);
+                    Debug.Write(c);
                     c = reader.GetNextChar();
                     idx++;
                 }
@@ -29,10 +31,13 @@ namespace DeveloperTest
             }
             return chars;
         }
-        public static List<string> GetWords(ICharacterReader reader)
+        public List<string> GetWords(ICharacterReader reader)
         {
+            var t = new TextBuider();
+            Debug.WriteLine("GetWords...1");
+
             List<string> words = new List<string>();
-            var chars = TextBuider.GetChars(reader);
+            var chars = t.GetChars(reader);
             
             string word = "";
             foreach (var c in chars) {
@@ -41,16 +46,34 @@ namespace DeveloperTest
                     case ' ':
                     case '?':
                     case '|':
+                    case '[':
+                    case ']':
+                    case ':':
+                    case '(':
+                    case ')':
                     case ',':
                     case '.':
+                    case '\'':
                     case '/':
+                    case '`':
                     case '\n':
                     case '\t':
                     case ';':
-                    case '-':
+//                    case '-':
                         if (word.Length > 0)
                         {
-                            words.Add(word);
+                            word = word.ToLower();
+                            if(word.Contains("--"))
+                            {
+                                var split=word.Split(new string[] { "--" }, StringSplitOptions.None);
+                                words.Add(split[0]);
+                                words.Add(split[1]);
+                            }
+                            else
+                            {
+                                words.Add(word);
+                            }
+
                             word = "";
                         }
                         break;
@@ -59,7 +82,8 @@ namespace DeveloperTest
                         break;
                 }
             }
-            words.Add(word);
+            if(word.Length>0) words.Add(word);
+
             words.ForEach(i => Trace.Write($"{i} "));
             return words;
         }

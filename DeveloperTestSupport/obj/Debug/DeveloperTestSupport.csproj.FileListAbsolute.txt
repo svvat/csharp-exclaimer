@@ -7,3 +7,12 @@ C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\
 C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.csproj.CopyComplete
 C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.dll
 C:\Users\Wreck it Ralf\Desktop\DeveloperTest\DeveloperTest\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.pdb
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestSupport\bin\Debug\DeveloperTestSupport.dll
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestSupport\bin\Debug\DeveloperTestSupport.pdb
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestSupport\bin\Debug\DeveloperTestInterfaces.dll
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestSupport\bin\Debug\DeveloperTestInterfaces.pdb
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.csprojAssemblyReference.cache
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.csproj.CoreCompileInputs.cache
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.csproj.CopyComplete
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.dll
+D:\Users\Wreck it Ralf\Documents\code\c#\exclaimer\DeveloperTestSupport\obj\Debug\DeveloperTestSupport.pdb

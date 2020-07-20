@@ -33,7 +33,7 @@ Rabbit with pink eyes ran close by her.";
 
         public char GetNextChar()
         {
-            Thread.Sleep(_rnd.Next(200));
+            Thread.Sleep(_rnd.Next(10));
 
             if (_pos >= content.Length)
             {
